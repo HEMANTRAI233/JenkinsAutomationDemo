@@ -8,7 +8,7 @@ pipeline{
 		}
 		stage('hello'){
 			steps{
-				sh 'pwsh hello.ps1.txt'
+				sh 'pwsh hello.ps1'
 			}
 		}
 	}
