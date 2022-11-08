@@ -3,7 +3,8 @@ pipeline{
 	stages{
 		stage('hello'){
 			steps{
-				bat 'powershell.exe .\hello.ps1'
+				bat 'PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& './hello.ps1'"'
+
 			}
 		}
 	}
